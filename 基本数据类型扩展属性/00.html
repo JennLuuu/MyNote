@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <title></title>
+  </head>
+  <body>
+    <script>
+      console.log(2 instanceof Number); //truex  false
+      console.log(true instanceof Boolean); //truex  false
+      console.log("str" instanceof String); //truex  false
+
+      const num = new Number(888)
+      console.log(num instanceof Number); //true
+
+      /* 
+      instanceof 不能检测基本数据类型
+      只能检测对象数据类型
+      只有基本数据类型是由 `new 构造函数(xxx)` 的方式创建的,才能支持instanceof
+      这种方式创建的基本数据是其构造函数的实例化对象,本质是一个对象,对象才支持instanceof
+      */
+    </script>
+  </body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <title>test</title>
+  </head>
+  <body>
+    <script>
+      var str = "abc";
+      str += 1;
+      var test = typeof str;
+      if (test.length == 6) {
+        test.sign = "typeof 的返回结果是String";
+      }
+      console.log(test.sign);
+      //这个结果是什么   undefined
+      console.log(test);
+      console.log(test.length);
+      console.log(test.length == 6);
+    </script>
+  </body>
+</html>
